@@ -121,14 +121,14 @@ h4 {
     </div>
 </div>
 
-<script>
+<script> //script untuk toggle tab
     const loginTab = document.getElementById('loginTab');
     const signUpTab = document.getElementById('SignUpTab'); 
     const loginBox = document.getElementById('loginBox');
     const signUpBox = document.getElementById('signUpBox');
 
 loginTab.onclick =() => {
-    loginTab.classList.add('active');
+    loginTab.classList.add('active'); 
     signUpTab.classList.remove('active');  
     loginBox.classList.add('active');
     signUpBox.classList.remove('active');

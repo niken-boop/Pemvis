@@ -79,7 +79,7 @@ $db['default'] = array(
 	'username' => 'root',
 	'password' => '',
 	'database' => 'projectakhir_db',
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'mysqli', // <--- WAJIB 'mysqli', JANGAN 'mysql'
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

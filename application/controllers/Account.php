@@ -6,7 +6,7 @@ class Account extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('User_model');
-        $this->load->library('session');
+        $this->load->library('session'); //cek status login
     }
 
     public function index() {
@@ -17,8 +17,6 @@ class Account extends CI_Controller {
 $user_id = $this->session->userdata('user_id');
 $data['user'] = $this->User_model->get_user_by_id($user_id);
 
-/*var_dump($data['user']);
-exit;*/
 
         $this->load->view('account_view', $data);
     }

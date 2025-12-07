@@ -55,7 +55,7 @@ body {
   min-height: 100vh;
 }
 
-/* Book section */
+
 .book-card {
   background: rgba(255,255,255,0.8);
   border-radius: 20px;
@@ -67,13 +67,6 @@ body {
 
 .book-card:hover {
   transform: translateY(-5px);
-}
-/*.title_cute{
-  font-family: 'pacifico', cursive;
-  font-size: 32px;
-  color: #c499b7ff;
-  text-shadow:1px 1px 2px rgba(0,0,0,0.1);
-  letter-spacing: 1px;
 }
 
 /* Buttons */
@@ -110,10 +103,6 @@ body {
 <div class="Novel1">
   <h4>📚 Bookepink</h4>
   <a href="<?php echo site_url('account'); ?>"><i class="bi bi-person"></i> Account</a>
-  <!--<a href="#"><i class="bi bi-bell"></i> Notifications</a>
-  <a href="#"><i class="bi bi-bag"></i> My Orders</a>
-  <a href="#"><i class="bi bi-heart"></i> Favorites</a>
-  <a href="#"><i class="bi bi-gear"></i> Settings</a>-->
   <a href="<?php echo site_url('daftar'); ?>" style="color:red;"><i class="bi bi-box-arrow-right"></i> Logout</a>
 </div>
 
@@ -121,28 +110,13 @@ body {
 <div class="main-content">
   <div class="container">
 
- <!--  <div class="row mt-4">
-      <h2 class="fw-bold text-primary"></h2>
-      <p class="text-muted">Anne of Green Gables</p>
-      <div class="col-md-4">
-        <img src="<?php echo base_url('asset/Anne.jpeg'); ?>" class="img-fluid rounded shadow">
-      </div>
-      <div class="col-md-8">
-        <p>"Anne of Green Gables" adalah sinopsis dari kisah novel klasik oleh Lucy Maud Montgomery tentang seorang anak yatim piatu bernama Anne Shirley yang secara keliru diadopsi oleh kakak beradik Matthew dan Marilla Cuthbert,</p>
-          <p>yang sebenarnya menginginkan anak laki-laki untuk membantu pertanian mereka. Novel ini mengikuti petualangan, persahabatan, dan pertumbuhan Anne saat ia beradaptasi dengan kehidupan di Green Gables,</p>
-          <p> sebuah peternakan di Desa Avonlea, meskipun memiliki kepribadian yang penuh imajinasi dan bicara. </p>
-        <button class="btn btn-pink me-2">Paperbook-Rp98.000</button>
-        <button class="btn btn-outline-secondary">E-book-Rp32.000</button>
-      </div>
-    </div> -->
-
 <div class="scroll-section">
   <h4 class="mt-5">💕Selamat Datang di Bookepink💕</h4>
 
-  <div class="d-flex overflow-auto mt-3" style="gap:20px;">
+  <div class="d-flex overflow-auto mt-3" style="gap:20px;"> <!-- scrool kanan kiri, gap(jarak antar card for buku yes-->
 
     <!-- Buku 1 -->
-    <a href="<?php echo site_url('detail_buku/detail/1'); ?>" style="text-decoration:none; color:inherit;">
+    <a href="<?php echo site_url('detail_buku/detail/1'); ?>" style="text-decoration:none; color:inherit;">  <!--memanggil Detail_buku di controller-->
       <div class="book-card" style="min-width:180px;">
         <img src="<?php echo base_url('asset/CantikLuka.jpg'); ?>" class="book-img">
         <p class="mt-2 text-center">Cantik Itu Luka</p>

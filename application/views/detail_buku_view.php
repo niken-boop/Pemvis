@@ -102,14 +102,14 @@
             
         </div>
 
-        <?php else: ?>
+        <?php else: ?> <!--jika data buku tdk ada-->
             <p>Data buku tidak ditemukan.</p>
         <?php endif; ?>
 
       </div>
       
       <div class="modal-footer border-0">
-        <a href="<?php echo site_url('dashboard'); ?>" class="btn btn-secondary">Tutup</a>
+        <a href="<?php echo site_url('dashboard'); ?>" class="btn btn-secondary">Tutup</a> <!--tombol tutup -> balik ke dashboard-->
       </div>
 
     </div>
@@ -118,9 +118,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var myModal = new bootstrap.Modal(document.getElementById('bookModal'), {});
+<script> // otomatis tampil modal saat halaman dimuat
+    document.addEventListener('DOMContentLoaded', function() { // Tunggu hingga DOM siap
+        var myModal = new bootstrap.Modal(document.getElementById('bookModal'), {}); // Cari elemen HTML dengan ID bookModal (bikin instance modal dr boostrap js (modal=buka,tutup,popup dll))
         myModal.show();
     });
 </script>
